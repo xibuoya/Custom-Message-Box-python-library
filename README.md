@@ -38,35 +38,35 @@ Quick start guide:
 
 - Information Message
 ```Python
-cmb.ctkinfo("Title", "Operation successful!")
+custom_message_box.ctkinfo("Title", "Operation successful!")
 ```
 
 - Error Message
 ```Python
-cmb.ctkerror("Warning", "Connection lost.")
+custom_message_box.ctkerror("Warning", "Connection lost.")
 ```
 
 - Confirmation Window
 Returns 1 for Yes and 0 for No.
 ```Python
-response = cmb.ctk_msg_yesno("Exit", "Do you really want to leave?")
+response = custom_message_box.ctk_msg_yesno("Exit", "Do you really want to leave?")
 ```
 
 - Text Input
 Returns the entered string.
 ```Python
-username = cmb.ctk_msg_entry("Username", "Enter your name:", "e.g., John")
+username = custom_message_box.ctk_msg_entry("Username", "Enter your name:", "e.g., John")
 ```
 
 - Custom Buttons
 Returns the text of the clicked button.
 ```Python
-choice = cmb.ctk_msg_custom("Menu", "Choose an option:","Play", "Options", "Exit")
+choice = custom_message_box.ctk_msg_custom("Menu", "Choose an option:","Play", "Options", "Exit")
 ```
 
 ##  💻 Full Integration Example
 ```Python
-from lib import custom_message_box as cmb
+from custom_message_box import * as cmb
 
 # 1. Test Entry
 entry_response = cmb.ctk_msg_entry("Title", "Enter something:", "Placeholder")
