@@ -2,6 +2,12 @@
 
 ![Python Version](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/Status-Beta-orange)
+![PyPI version](https://img.shields.io/pypi/v/custom_message_box.svg)
+![OS](https://img.shields.io/badge/OS-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)
+![CustomTkinter](https://img.shields.io/badge/UI-CustomTkinter-blueviolet)
+
+
 
 ## 📝 Description
 
@@ -27,6 +33,7 @@ Install the library:
 pip install custom_message_box
 ```
 ## 🚀 Usage
+
 Quick start guide:
 
 - Information Message
