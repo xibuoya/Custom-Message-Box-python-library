@@ -1,73 +1,84 @@
 # Custom Message Box library
 
-Une bibliothèque simple et moderne pour créer des boîtes de dialogue personnalisées avec **CustomTkinter**. Elle permet de récupérer facilement des réponses utilisateur (saisies, confirmations, choix multiples) sans avoir à manipuler des classes complexes.
+![Python Version](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-## 📦 Fonctionnalités
+## 📝 Description
 
-- **Information & Erreur** : Notifications simples.
-- **Yes/No** : Boîte de dialogue de confirmation.
-- **Entry** : Boîte de dialogue avec saisie de texte.
-- **Custom** : Boîte de dialogue de 2 ou 3 boutons personnalisés.
+Custom Message Boxis simple and modern library to create custom dialog boxes with **CustomTkinter**. It allows you to easily retrieve user responses (inputs, confirmations, multiple choices) without having to deal with complex classes.
 
-## 🛠 Installation
+## 📦 Features
 
-Assurez-vous d'avoir installé CustomTkinter :
+- **Information & Error**: Simple notification boxes.
+- **Yes/No**: Confirmation dialog boxes.
+- **Entry**: Dialog boxes with text input.
+- **Custom**: Dialog boxes with 2 or 3 customized buttons.
+
+## 🛠️ Installation
+
+Make sure you have CustomTkinter installed:
 
 ```bash
 pip install customtkinter
 ```
+Install the library:
 
-Installer la librairie : 
-
-```bash
+```Bash
 pip install custom_message_box
 ```
+## 🚀 Usage
+Quick start guide:
 
-## Utilisation
-Guide d'utilisation rapide :
-- **Message d'Information**(ctkinfo)
-    ```python
-    ctk_msg.ctkinfo("Titre", "Opération réussie !")
-    ```
-
-- **Message d'Erreur** (ctkerror)
-    ```python
-    ctk_msg.ctkerror("Attention", "Connexion perdue.")
-    ```
-
-- **Fenêtre de Confirmation** (ctk_msg_yesno)
-Renvoie 1 pour Oui et 0 pour Non.
-    ```python
-    reponse = ctk_msg.ctk_msg_yesno("Quitter", "Voulez-vous vraiment partir ?")
-    ```
-
-- **Saisie de text** (ctk_msg_entry)
-Renvoie la chaîne de caractères saisie.
-    ```python
-    pseudo = ctk_msg.ctk_msg_entry("Pseudo", "Entrez votre nom :", "Ex: Jean")
-    ```
-
-- **Boutons personnalisés** (ctk_msg_custom)
-Renvoie le texte du bouton cliqué.
-    ```python
-    choix = ctk_msg.ctk_msg_custom("Menu", "Choisir :", 3, "Jouer", "Options", "Quitter")
-    ```
-
-### Exemple complet d'intégration
-
-```python
-import customtkinter as ctk
-import ctk_msg
-
- def demo():
-nom = ctk_msg.ctk_msg_entry("Login", "Ton nom :", "Pseudo...")
-if nom:
-conf = ctk_msg.ctk_msg_yesno("Salut", f"Tu es bien {nom} ?")
-if conf == 1:
-ctk_msg.ctkinfo("Succès", "Profil validé !")
-
-app = ctk.CTk()
-btn = ctk.CTkButton(app, text="Lancer Test", command=demo)
-btn.pack(pady=50)
-app.mainloop()
+- Information Message
+```Python
+cmb.ctkinfo("Title", "Operation successful!")
 ```
+
+- Error Message
+```Python
+cmb.ctkerror("Warning", "Connection lost.")
+```
+
+- Confirmation Window
+Returns 1 for Yes and 0 for No.
+```Python
+response = cmb.ctk_msg_yesno("Exit", "Do you really want to leave?")
+```
+
+- Text Input
+Returns the entered string.
+```Python
+username = cmb.ctk_msg_entry("Username", "Enter your name:", "e.g., John")
+```
+
+- Custom Buttons
+Returns the text of the clicked button.
+```Python
+choice = cmb.ctk_msg_custom("Menu", "Choose an option:","Play", "Options", "Exit")
+```
+
+##  💻 Full Integration Example
+```Python
+from lib import custom_message_box as cmb
+
+# 1. Test Entry
+entry_response = cmb.ctk_msg_entry("Title", "Enter something:", "Placeholder")
+print(entry_response)
+
+# 2. Test YesNo
+yesno_response = cmb.ctk_msg_yesno("Confirm", "Are you sure?")
+print(yesno_response)
+
+# 3. Test Custom (Title, Message, Text1, Text2)
+custom_response = cmb.ctk_msg_custom("Choice", "Select one:", "Option 1", "Option 2")
+print(custom_response)
+
+# 4. Test Info
+cmb.ctkinfo("Info", "Everything is OK!")
+
+# 5. Test Error
+cmb.ctkerror("Danger", "Something went wrong!")
+```
+
+##
+Good programing !
