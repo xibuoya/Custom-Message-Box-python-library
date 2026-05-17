@@ -22,7 +22,7 @@ Custom Message Boxis simple and modern library to create custom dialog boxes wit
 - **Information & Error**: Simple notification boxes.
 - **Yes/No**: Confirmation dialog boxes.
 - **Entry**: Dialog boxes with text input.
-- **Custom**: Dialog boxes with 2 or 3 customized buttons.
+- **Custom**: Dialog boxes with 2 customized buttons.
 
 ## 🛠️ Installation
 
