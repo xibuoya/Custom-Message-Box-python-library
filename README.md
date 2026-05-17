@@ -32,6 +32,10 @@ Install the library:
 ```Bash
 pip install custom_message_box
 ```
+(Not available at the moment)
+
+Or download the script.
+
 ## 🚀 Usage
 
 Quick start guide:
