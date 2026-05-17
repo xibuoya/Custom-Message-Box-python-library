@@ -13,6 +13,10 @@
 
 Custom Message Boxis simple and modern library to create custom dialog boxes with **CustomTkinter**. It allows you to easily retrieve user responses (inputs, confirmations, multiple choices) without having to deal with complex classes.
 
+## Screenshoots
+
+![Screenshoot](https://raw.githubusercontent.com/xibuoya/Custom-Message-Box-python-library/refs/heads/main/Custom_Message_Box.png
+
 ## 📦 Features
 
 - **Information & Error**: Simple notification boxes.
