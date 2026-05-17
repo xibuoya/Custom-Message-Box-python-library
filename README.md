@@ -15,7 +15,7 @@ Custom Message Boxis simple and modern library to create custom dialog boxes wit
 
 ## Screenshoots
 
-![Screenshoot](https://raw.githubusercontent.com/xibuoya/Custom-Message-Box-python-library/refs/heads/main/Custom_Message_Box.png
+![Screenshoot](https://raw.githubusercontent.com/xibuoya/Custom-Message-Box-python-library/refs/heads/main/Custom_Message_Box.png).
 
 ## 📦 Features
 
