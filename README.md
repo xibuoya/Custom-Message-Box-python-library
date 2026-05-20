@@ -73,7 +73,7 @@ choice = custom_message_box.ctk_msg_custom("Menu", "Choose an option:","Play", "
 
 ##  💻 Full Integration Example
 ```Python
-from custom_message_box import.cmb * as cmb
+from custom_message_box.cmb import * as cmb
 
 # 1. Test Entry
 entry_response = cmb.ctk_msg_entry("Title", "Enter something:", "Placeholder")
