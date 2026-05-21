@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "TON_NOM"
+    given-names: "TON_PRENOM"
+title: "Custom-Message-Box"
+version: 1.0.0
+date-released: 2026-05-21
